@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .parent {
+          width: 80%;
+          margin: auto;
+          background-color: aqua;
+          padding: 20px 0;
+      }
+
+      .clearfix:after {
+          visibility: hidden;
+          display: block;
+          font-size: 0;
+          content: " ";
+          clear: both;
+          height: 0;
+      }
+
+      .parent div {
+          width: 25%;
+          float: left;
+          padding: 0;
+          color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent clearfix">
+      <div style="background-color: red;">Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is.</div>
+      <div style="background-color: green;">Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is.</div>
+      <div style="background-color: blue;">Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is.</div>
+      <div style="background-color: violet;">Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is. Paragraph of text. Isn't this a great paragraph of text? It is.</div>
+    </div>
+  </body>
+</html>
