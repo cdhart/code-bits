@@ -1,0 +1,108 @@
+<!-- link CSS file -->
+  <link rel="stylesheet" type="text/css" href="FILE/PATH.css">
+
+<!-- BOOTSTRAP -->
+  <!-- CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- HTML/CSS arguments-->
+ANCHORS
+  <!-- open link (in a new tab) -->
+    <a href="http://#.com" target="_blank">TEXT</a>
+  ​
+  <!-- anchor tag to send email -->
+    <a href="mailto:EMAIL_ADDRESS">TEXT</a>
+
+  PSUEDO CLASS
+      /* unvisited link */
+     a:link {
+         color: #FF0000;
+     }
+
+     /* visited link */
+     a:visited {
+         color: #00FF00;
+     }
+
+     /* mouse over link */
+     a:hover {
+         color: #FF00FF;
+     }
+     
+     /* selected link */
+     a:active {
+         color: #0000FF;
+     }
+
+IMAGE​
+  <!-- insert image using a URL -->
+    <img src="https://URL" alt="ALTERNATE_TEXT" title="picture note" height=XX width=XX/>
+  <!-- insert image using a file path -->
+    <img src="./PATH/TO/FILE.fileextension" alt="ALTERNATE_TEXT" title="picture note" style="height:XX;width=XX"/>
+
+LISTS​
+  <!-- unordered list -->
+    <ul>
+      <li>Order</li>
+      <li>Doesn't</li>
+      <li>Matter</li>
+    </ul>
+    ​
+  <!-- ordered list -->
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+
+COLOR
+  <!-- HTML color -->
+    rgb - "rgb(255,255,0)";
+    rgb w/opacity - "rgb(255, 255, 0, .5)";
+    hexidecimal - "#fefefe"
+
+CLEARFIX-CSS
+  [class/ID]:after {
+     content: ".";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+  }
+TABLE
+<table>
+ <colgroup>
+   <col span="2" style="background-color:red">
+   <col style="background-color:yellow">
+ </colgroup>
+ <thead>
+    <tr>
+      <th>Entry #</th>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+ </thead>
+ <tfoot>
+   <tr>
+      <td>2 entries</td>
+      <td>Sum</td>
+      <td>$180</td>
+   </tr>
+ </tfoot>
+ <tbody>
+   <tr>
+      <td>Entry 1</td>
+      <td>January</td>
+      <td>$100</td>
+   </tr>
+   <tr>
+      <td>Entry 2</td>
+      <td>February</td>
+      <td>$80</td>
+   </tr>
+ </tbody>
+</table>
