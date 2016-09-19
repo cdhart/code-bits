@@ -1,0 +1,177 @@
+<!-- html comment-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>table test</title>
+    <link rel="icon"
+      type="image/png"
+      href="img/myicon.png">
+    <!-- bootstrap local-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- animate.css CDN -->
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+    <!-- google font CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=#">
+    <!-- project stylesheet local
+    <link rel="stylesheet" href="css/cdh.css">-->
+    <style>
+      table {
+        width: 100%;
+        border: 1px solid black;
+        border-spacing: 5px;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 15px;
+      }
+      #t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+      }
+      table#t02 tr:nth-child(even) {
+        background-color: #aaa;
+      }
+      table#t02 tr:nth-child(odd) {
+        background-color: #fff;
+      }
+      table#t02 th {
+        color: white;
+        background-color: black;
+      }
+    </style>
+
+      <!-- additional <style> tags
+      table {
+        border-collapse: collapse;
+      }
+      -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <!--table 1-->
+    <table>
+      <caption>Monthly savings</caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+    <!--table 2-->
+    <table>
+     <colgroup>
+       <col span="2" style="background-color:red">
+       <col style="background-color:yellow">
+     </colgroup>
+     <thead>
+        <tr>
+          <th>Entry #</th>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+     </thead>
+     <tfoot>
+       <tr>
+          <td>2 entries</td>
+          <td>Sum</td>
+          <td>$180</td>
+       </tr>
+     </tfoot>
+     <tbody>
+       <tr>
+          <td>Entry 1</td>
+          <td>January</td>
+          <td>$100</td>
+       </tr>
+       <tr>
+          <td>Entry 2</td>
+          <td>February</td>
+          <td>$80</td>
+       </tr>
+     </tbody>
+    </table>
+    <!--table 3-->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>55577854</td>
+        <td>55577855</td>
+      </tr>
+    </table>
+    <!--table 4-->
+    <table id="t01">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td rowspan="2">Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Henry</td>
+        <td>96</td>
+      </tr>
+    </table>
+    <!-- table 5 -->
+    <table id="t02">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Jimmy</td>
+        <td>John</td>
+        <td>48</td>
+      </tr>
+      <tr>
+        <td>Ralph</td>
+        <td>Peters</td>
+        <td>66</td>
+      </tr>
+      <tr>
+        <td>Winne</td>
+        <td>McGrew</td>
+        <td>29</td>
+      </tr>
+    </table>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cdhmain.js"></script>
+  </body>
+</html>
+<!-- html comment-->
