@@ -40,9 +40,9 @@ ANCHORS
 
 IMAGE​
   <!-- insert image using a URL -->
-    <img src="https://URL" alt="ALTERNATE_TEXT" title="picture note" height=XX width=XX/>
+    <img src="https://URL" alt="ALTERNATE_TEXT" title="picture note" class="img-responsive" />
   <!-- insert image using a file path -->
-    <img src="./PATH/TO/FILE.fileextension" alt="ALTERNATE_TEXT" title="picture note" style="height:XX;width=XX"/>
+    <img src="./PATH/TO/FILE.fileextension" alt="ALTERNATE_TEXT" title="picture note" class="img-responsive"/>
 
 LISTS​
   <!-- unordered list -->
